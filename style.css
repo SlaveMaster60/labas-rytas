@@ -17,7 +17,7 @@ body{
 /*Containers*/
 .MainContainer{
     border: 1px solid #48CAE4;
-    background-color: #89c6d2;
+    background-color: #e8fbff;
     text-align: center;
     padding-bottom: 15%;
 }
@@ -31,21 +31,14 @@ body{
     width: 100%;
 }
 .Card > p{
-    text-align: center;
-}
-.Card:hover{
-    transition: 0.35s;
-    background-color: rgba(255, 255, 255, 0.129);
-    border-radius: 20px;
-}
-#Card1{
-    grid-column: 1 / span 2;
+    text-align: left;
 }
 .CardContainer{
     display: grid;
-    grid-template-columns: 0.8fr 0.4fr;
+    grid-template-columns: 0.5fr 0.3fr;
     row-gap: 100px;
     margin-bottom: 25px;
+    place-content: center;
 }
 footer{
     padding: 30px 0px 30px 0px;
@@ -182,3 +175,8 @@ p > span{
 .imgtop{
     width: 30%;
 }
+.Card > img{
+    align-items: end;
+}
+
+
