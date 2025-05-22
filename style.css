@@ -8,16 +8,16 @@ body{
 }
 /*transition*/
 body{
-    animation: transition 0.5s normal;
+    animation: intro 0.5s normal;
 }
-@keyframes transition{
-    0% {filter: brightness(0);}
-    100% {filter: brightness(1);}
+@keyframes intro{
+    0% {filter: opacity(0);}
+    100% {filter: opacity(1);}
 }
 /*Containers*/
 .MainContainer{
     border: 1px solid #48CAE4;
-    background-color: #51c6de;
+    background-color: #89c6d2;
     text-align: center;
     padding-bottom: 15%;
 }
@@ -31,21 +31,20 @@ body{
     width: 100%;
 }
 .Card > p{
-    text-align: left;
-    margin-left: 10px;
+    text-align: center;
 }
-.Card{
-    background-color: #00B4D8;
-    border: 2px solid #03045E;
+.Card:hover{
+    transition: 0.35s;
+    background-color: rgba(255, 255, 255, 0.129);
+    border-radius: 20px;
 }
-.CardCenter{
-    background-color: #00B4D8;
-    border-top: 2px solid #03045E;
-    border-bottom: 2px solid #03045E;
+#Card1{
+    grid-column: 1 / span 2;
 }
 .CardContainer{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 0.8fr 0.4fr;
+    row-gap: 100px;
     margin-bottom: 25px;
 }
 footer{
@@ -56,17 +55,16 @@ footer{
 }
 .CardFull{
     background-color: #00B4D8;
-    border-top: 2px solid #03045E;
-    border-bottom: 2px solid #03045E;
 }
 .CardContainerFull{
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: repeat(9, 1fr);
     margin-bottom: 25px;
     text-align: left;
 }
-.CardCenterFull{
-    background-color: #00B4D8;
+.linkHid:link{
+    color: #020346;
+    text-decoration: none;
 }
 /*Text*/
 .KITM{
@@ -115,7 +113,7 @@ footer > p{
     margin-right: 10px;
 }
 .navText2:visited{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .navText2:hover{
     transition: 0.35s;
@@ -170,7 +168,7 @@ p > span{
 }
 /*Images*/
 .img{
-    width: 70%;
+    width: 55%;
 }
 .imgSquare{
     width: 50%;
